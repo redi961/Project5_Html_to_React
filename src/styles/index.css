@@ -1,0 +1,61 @@
+/* 전체 적용*/
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 레이아웃*/
+main {
+    background-color: #45A9EF;
+    display: flex;
+    /*사이트를 보는 디스플레이에 따라 크기를 조절되게 만드는 기능 -> 용량 초과시 내용을 아래로 내림*/
+    /*flex-wrap: wrap;*/
+}
+main > section {
+    display: flex;
+    width: 25%;
+    margin: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #29C1F3;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    position: sticky;
+
+}
+footer > ul {
+    font-size: 15px;
+    margin-left: 9px;
+    list-style-type: none;
+}
+footer > h2,
+ul {
+    margin: 10px;
+}
+
+img {
+    border-radius: 20%;
+}
+/*출력 장치 사이즈에 따른 css 설정 (반응형 웹) // 아래의 설정은 화면 넓이가 600px 아래로 떨어졌을때 발생함*/
+/* flex-direction : col -> Flex 축을 세로로 변경*/
+@media only screen and (max-width:600px) {
+    header > section {
+        flex-direction: column;
+    }
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    main > section {
+        display: flex;
+        width: 80%;
+        margin: 10px;
+        text-align: center;
+    }
+    footer ul {
+        display: none;
+    }
+}

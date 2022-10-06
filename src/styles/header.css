@@ -1,0 +1,24 @@
+header {
+    background-color: #29C1F3;
+    font-family: 'Dongle', sans-serif;
+}
+header > section {
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+}
+.header_left,
+.header_right {
+    color: white;
+    width: 70%;
+}
+.header_left {
+    width: 30%;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+    /*em : 부모 항목의 Size 비례*/
+    /*rem : 전체 항목의 Size 비례*/
+    /*font-size: 1em;*/
+
