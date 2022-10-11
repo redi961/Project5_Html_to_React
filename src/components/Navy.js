@@ -3,10 +3,10 @@ import '../styles/nav.css';
 function Navy() {
   return (
     <nav>
-    <div class="nav_logo">
+    <div className="nav_logo">
         <div>mylogo</div>
     </div>
-    <ul class="nav_menu">
+    <ul className="nav_menu">
         <li>
             <a href="#">LOGO</a>
         </li>
@@ -20,12 +20,12 @@ function Navy() {
             <a href="#">React</a>
         </li>
     </ul>
-    <ul class="nav_icon">
+    <ul className="nav_icon">
         <li>
-            <i class="fa-brands fa-facebook"></i>
+            <i className="fa-brands fa-facebook"></i>
         </li>
         <li>
-            <i class="fa-brands fa-instagram"></i>
+            <i className="fa-brands fa-instagram"></i>
         </li>
     </ul>
 </nav>

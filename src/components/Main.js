@@ -1,4 +1,5 @@
 import '../styles/index.css';
+import MySection from './Section/MySection';
 import SectionPart_1 from './Section/SectionPart_1';
 import SectionPart_2 from './Section/SectionPart_2';
 import SectionPart_3 from './Section/SectionPart_3';
@@ -9,10 +10,10 @@ function Main() {
     return (
         <>
         <main>
-            <SectionPart_1/>
-            <SectionPart_2/>
-            <SectionPart_3/>
-            <SectionPart_4/>
+            <MySection h1="HTML" p="testHTML"/>
+            <MySection h1="CSS" p="testCSS"/>
+            <MySection h1="JavaScript" p="testJS"/>
+            <MySection h1="React" p="testReact"/>
     </main>
     </>
     );
